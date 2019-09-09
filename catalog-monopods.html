@@ -29,7 +29,11 @@
         <li class="main-menu__item"><a href="#">Контакты</a></li>
       </ul>
 
-      <!-- Здесь будет форма поиска по сайту -->
+      <form class="search-form" action="#" method="post">
+        <label for="search-field"></label>
+        <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+        <input type="submit" value="Найти">
+      </form>
 
       <a class="user-button page-navigation__button" href="#">Валентин Петухов</a>
       <a class="logout-button page-navigation__button" href="#">Выйти</a>
@@ -40,15 +44,49 @@
 
   <main lass="content">
     <h1 class="content__page-title">Моноподы для селфи</h1>
-    <ul class="content__breadcrumbs">
-      <li class="content__breadcrumbs-item"><a href="index.html">Главная</a></li>
-      <li class="content__breadcrumbs-item"><a href="#">Каталог товаров</a></li>
-      <li class="content__breadcrumbs-item">Моноподы для селфи</li>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="#">Каталог товаров</a></li>
+      <li class="breadcrumbs__item">Моноподы для селфи</li>
     </ul>
     <section class="filter">
-      <h2 class="content__section-title">Фильтр</h2>
+      <h2 class="content__section-title">Фильтр:</h2>
 
-      <!-- Форма фильтрации товаров -->
+      <form class="filter" action="#" method="POST">
+        <div class="filter__wrapper">
+          <label for="price-field">Стоимость</label>
+        </div>
+        <div class="filter__wrapper">
+          <label for="color-field">Цвет</label>
+          <input class="filter__color-checkbox" type="checkbox" name="color" id="color-field" value="black">Черный
+          <input class="filter__color-checkbox" type="checkbox" name="color" id="color-field" value="white">Белый
+          <input class="filter__color-checkbox" type="checkbox" name="color" id="color-field" value="blue">Синий
+          <input class="filter__color-checkbox" type="checkbox" name="color" id="color-field" value="red">Красный
+          <input class="filter__color-checkbox" type="checkbox" name="color" id="color-field" value="pink">Розовый
+        </div>
+        <div class="filter__wrapper">
+          <label class="filter__bluetooth-radio" for="bluetooth-field">Bluetooth</label>
+          <input class="filter__bluetooth-radio" type="radio" name="bluetooth" id="bluetooth-field" value="yes">Есть
+          <input class="filter__bluetooth-radio" type="radio" name="bluetooth" id="bluetooth-field" value="no">Нет
+        </div>
+        <input class="content__button" type="submit" value="Показать">
+      </form>
+    </section>
+
+    <section class="sorting">
+      <form class="sorting__form" action="#" method="get">
+        <div class="sorting__wrapper">
+          <label for="sorting-field">Сортировка:</label>
+          <input class="sorting__radio" type="radio" name="sorting-type" id="sorting-field">По цене
+          <input class="sorting__radio" type="radio" name="sorting-type" id="sorting-field">По типу
+          <input class="sorting__radio" type="radio" name="sorting-type" id="sorting-field">По популярности
+        </div>
+        <div class="sorting__wrapper">
+          <input class="sorting__radio" type="radio" name="sorting-direction" id="sorting-direction-field">По убыванию
+          <input class="sorting__radio" type="radio" name="sorting-direction" id="sorting-direction-field">По
+          возрастанию
+        </div>
+      </form>
     </section>
 
     <section class="products">
@@ -86,6 +124,22 @@
           <p class="product-item__price">4900 руб.</p>
         </li>
       </ul>
+
+      <div class="pagination">
+        <a class="pagination__nav-back" href="#">Назад</a>
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a class="pagination_link">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination_link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination_link" href="#">3</a>
+          </li>
+        </ul>
+        <a class="pagination__nav-front" href="#">Вперед</a>
+      </div>
     </section>
   </main>
 
@@ -116,8 +170,9 @@
       <a class="compare-button page-footer__button" href="#">Сравнить</a>
       <a class="cart-button page-footer__button" href="#">Корзина</a>
       <p>Тел.: +7 (495) 495-95-95</p>
-      <a class="page-footer__dev-link" href="https://htmlacademy.ru/intensive/htmlcss"><img
-          class="page-footer__dev-logo" src="" alt="HTML Academy"></a>
+      <a class="page-footer__dev-link" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="page-footer__dev-logo" src="" alt="HTML Academy">
+      </a>
     </div>
   </footer>
 </body>
