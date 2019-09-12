@@ -10,7 +10,8 @@
   <header class="page-header">
     <nav class="page-navigation">
       <a href="index.html">
-        <img class="logo page-header__logo" src="img/logo.svg" width="163" height="35" alt="Device">
+        <img class="logo page-header__logo" src="img/logo.svg" width="163" height="35"
+          alt="Интернет магазин гаджетов Device">
       </a>
       <ul class="main-menu">
         <li class="main-menu__item">
@@ -42,7 +43,7 @@
     </nav>
   </header>
 
-  <main lass="content">
+  <main class="content">
     <h1 class="content__page-title">Моноподы для селфи</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
@@ -57,40 +58,64 @@
           <label for="price-field">Стоимость</label>
         </div>
         <div class="filter__wrapper">
-          <label for="color-field">Цвет</label>
-          <input class="filter__color-checkbox" type="checkbox" name="color" id="color-field" value="black">Черный
-          <input class="filter__color-checkbox" type="checkbox" name="color" id="color-field" value="white">Белый
-          <input class="filter__color-checkbox" type="checkbox" name="color" id="color-field" value="blue">Синий
-          <input class="filter__color-checkbox" type="checkbox" name="color" id="color-field" value="red">Красный
-          <input class="filter__color-checkbox" type="checkbox" name="color" id="color-field" value="pink">Розовый
+          <fieldset class="filter__color-fields">
+            <legend class="filter__fieldset-title">Цвет</legend>
+            <input class="filter__color-checkbox" id="color-black" type="checkbox" name="color" value="black">
+            <label for="color-black">Черный</label>
+            <input class="filter__color-checkbox" id="color-white" type="checkbox" name="color" value="white">
+            <label for="color-white">Белый</label>
+            <input class="filter__color-checkbox" id="color-blue" type="checkbox" name="color" value="blue">
+            <label for="color-blue">Синий</label>
+            <input class="filter__color-checkbox" id="color-red" type="checkbox" name="color" value="red">
+            <label for="color-red">Красный</label>
+            <input class="filter__color-checkbox" id="color-pink" type="checkbox" name="color" value="pink">
+            <label for="color-pink">Розовый</label>
+          </fieldset>
         </div>
+
         <div class="filter__wrapper">
-          <label class="filter__bluetooth-radio" for="bluetooth-field">Bluetooth</label>
-          <input class="filter__bluetooth-radio" type="radio" name="bluetooth" id="bluetooth-field" value="yes">Есть
-          <input class="filter__bluetooth-radio" type="radio" name="bluetooth" id="bluetooth-field" value="no">Нет
+          <fieldset class="filter__bluetooth-fields">
+            <legend class="filter__fieldset-title">Bluetooth</legend>
+            <input class="filter__bluetooth-radio" type="radio" name="bluetooth" id="bluetooth-yes" value="yes">
+            <label for="bluetooth-yes">Есть</label>
+            <input class="filter__bluetooth-radio" type="radio" name="bluetooth" id="bluetooth-no" value="no">
+            <label for="bluetooth-no">Нет</label>
+          </fieldset>
         </div>
-        <input class="content__button" type="submit" value="Показать">
+
+        <button class="content__button" type="submit">Показать</button>
+
       </form>
     </section>
 
     <section class="sorting">
+      <h2>Сортировка</h2>
       <form class="sorting__form" action="#" method="get">
         <div class="sorting__wrapper">
-          <label for="sorting-field">Сортировка:</label>
-          <input class="sorting__radio" type="radio" name="sorting-type" id="sorting-field">По цене
-          <input class="sorting__radio" type="radio" name="sorting-type" id="sorting-field">По типу
-          <input class="sorting__radio" type="radio" name="sorting-type" id="sorting-field">По популярности
+          <fieldset class="sorting__fields-keys">
+            <legend class="sorting__fieldset-title">Сортировка:</legend>
+            <input class="sorting__radio" id="by-price" type="radio" name="sorting-type">
+            <label for="by-price">По цене</label>
+            <input class="sorting__radio" id="by-type" type="radio" name="sorting-type">
+            <label for="by-type">По типу</label>
+            <input class="sorting__radio" id="by-pop" type="radio" name="sorting-type">
+            <label for="by-pop">По популярности</label>
+          </fieldset>
         </div>
         <div class="sorting__wrapper">
-          <input class="sorting__radio" type="radio" name="sorting-direction" id="sorting-direction-field">По убыванию
-          <input class="sorting__radio" type="radio" name="sorting-direction" id="sorting-direction-field">По
-          возрастанию
+          <fieldset class="sorting__fields-direction">
+            <legend class="sorting__fieldset-title">Направления</legend>
+            <input class="sorting__radio" id="descending-direction" type="radio" name="sorting-direction">
+            <label for="descending-direction">По убыванию</label>
+            <input class="sorting__radio" id="ascending-direction" type="radio" name="sorting-direction">
+            <label for="ascending-direction">По возрастанию</label>
+          </fieldset>
         </div>
       </form>
     </section>
 
     <section class="products">
-      <h2 class="content__section-title">Карточки товаров</h2>
+      <h2 class="content__section-title">Карточки товаров "Моноподы для селфи"</h2>
       <ul class="products-list">
         <li class="product-item">
           <a href="#">
@@ -150,7 +175,8 @@
   <footer class="page-footer">
     <div class="page-footer__left-side">
       <a href="index.html">
-        <img class="logo page-footer__logo" src="img/logo.svg" width="163" height="35" alt="Device">
+        <img class="logo page-footer__logo" src="img/logo.svg" width="163" height="35"
+          alt="Интернет магазин гаджетов Device">
       </a>
       <p class="page-footer__text">г. Москва, ул. Строителей, 15</p>
     </div>
