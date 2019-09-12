@@ -9,8 +9,9 @@
 <body>
   <header class="page-header">
     <nav class="page-navigation">
-      <a>
-        <img class="logo page-header__logo" src="img/logo.svg" width="163" height="35" alt="Device">
+      <a aria-current="page">
+        <img class="logo page-header__logo" src="img/logo.svg" width="163" height="35"
+          alt="Интернет магазин гаджетов Device">
       </a>
       <ul class="main-menu">
         <li class="main-menu__item">
@@ -30,9 +31,9 @@
       </ul>
 
       <form class="search-form" action="#" method="post">
-        <label for="search-field"></label>
+        <label class=" visually-hidden" for="search-field">Поиск по сайту</label>
         <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
-        <input type="submit" value="Найти">
+        <button type="submit">Найти</button>
       </form>
 
       <a class="login-button page-navigation__button" href="#">Войти</a>
@@ -42,11 +43,11 @@
   </header>
 
   <main class="content">
-    <h1 class="content__page-title">Интернет магазин гаджетов «Device»</h1>
+    <h1 class="content__page-title visually-hidden">Интернет магазин гаджетов «Device»</h1>
     <section class="slider">
-      <h2 class="content__section-title">Специальные предложения</h2>
+      <h2 class="content__section-title visually-hidden">Специальные предложения</h2>
       <article class="slider__item">
-        <h3 class="slider__title">Монопод</h3>
+        <h3 class="slider__title visually-hidden">Монопод</h3>
         <img class="slider__image" src="img/slider-1.png" width="384" height="486" alt="Монопод">
         <p class="slider__number">1</p>
         <p class="slider__motto">Делай селфи, как Бен Стиллер!</p>
@@ -77,7 +78,7 @@
       </article>
 
       <article class="slider__item">
-        <h3 class="slider__title">Фитнес-браслет</h3>
+        <h3 class="slider__title visually-hidden">Фитнес-браслет</h3>
         <p class="slider__number">2</p>
         <img class="slider__image" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
         <p class="slider__motto">Худеем правильно!</p>
@@ -95,7 +96,7 @@
       </article>
 
       <article class="slider__item">
-        <h3 class="slider__title">Коптер</h3>
+        <h3 class="slider__title visually-hidden">Коптер</h3>
         <p class="slider__number">3</p>
         <img class="slider__image" src="img/slider-3.png" width="526" height="334" alt="Коптер">
         <p class="slider__motto">Порхает как бабочка, жалит как пчела!</p>
@@ -120,7 +121,7 @@
     </section>
 
     <section class="popular">
-      <h2 class="content__section-title">Популярные товары</h2>
+      <h2 class="content__section-title visually-hidden">Популярные товары</h2>
       <ul class="popular__list">
         <li class="popular__item">
           <a href="#">
@@ -162,7 +163,7 @@
     </section>
 
     <section class="services">
-      <h2 class="content__section-title">Сервис</h2>
+      <h2 class="content__section-title visually-hidden">Сервис</h2>
       <div class="services__left-side">
         <ul class="services__links">
           <li class="services__link-item"><a href="#">Доставка</a></li>
@@ -192,7 +193,7 @@
     </section>
 
     <section class="brands">
-      <h2 class="content__section-title">Бренды</h2>
+      <h2 class="content__section-title visually-hidden">Бренды</h2>
       <ul class="brands__list">
         <li class="brands__item">
           <a class="brands__link" href="#">
@@ -250,7 +251,8 @@
   <footer class="page-footer">
     <div class="page-footer__left-side">
       <a>
-        <img class="logo page-footer__logo" src="img/logo.svg" width="163" height="35" alt="Device" />
+        <img class="logo page-footer__logo" src="img/logo.svg" width="163" height="35"
+          alt="Интернет магазин гаджетов Device">
       </a>
       <p class="page-footer__text">г. Москва, ул. Строителей, 15</p>
     </div>
