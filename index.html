@@ -31,7 +31,7 @@
       </ul>
 
       <form class="search-form" action="#" method="post">
-        <label class=" visually-hidden" for="search-field">Поиск по сайту</label>
+        <label class="visually-hidden" for="search-field">Поиск по сайту</label>
         <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
         <button type="submit">Найти</button>
       </form>
@@ -280,6 +280,32 @@
       </a>
     </div>
   </footer>
+
+  <section class="write-us">
+    <h2 class="content__section-title">Форма обратной связи</h2>
+    <form class="write-us__form" action="#" method="post">
+      <div class="half-part">
+        <label class="write-us__label" for="name-field">Ваше имя:</label>
+        <input class="write-us__field" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+      </div>
+      <div class="half-part">
+        <label class="write-us__label" for="email-field">Ваш e-mail:</label>
+        <input class="write-us__field" type="email" name="email" id="email-field" placeholder="example@example.com">
+      </div>
+      <label class="write-us__label" for="message-field">Текст письма:</label>
+      <textarea class="write-us__field" name="message" id="message-field" cols="30" rows="10"
+        placeholder="В свободной форма"></textarea>
+      <button class="content__button" type="submit">Отправить</button>
+    </form>
+    <button class="close_button" type="button">Закрыть</button>
+  </section>
+
+  <section class="popup-map">
+    <h2 class="content__section-title">Карта с адресом</h2>
+    <img src="img/map-big.jpg" alt="Адрес офиса: г. Москва, ул. Строителей, 15">
+    <button class="close_button" type="button">Закрыть</button>
+  </section>
+
 </body>
 
 </html>
