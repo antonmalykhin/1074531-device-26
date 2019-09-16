@@ -54,51 +54,64 @@
     <section class="filter">
       <h2 class="content__section-title">Фильтр:</h2>
 
-      <form class="filter" action="#" method="get">
+      <form class="filter form" action="#" method="get">
 
+        <label>Стоимость</label>
 
-
-        <label for="price-field">Стоимость</label>
-        <input id="price-field" type="range">
-
-
-
-        <fieldset class="filter__color-fields">
-          <legend class="filter__fieldset-title">Цвет</legend>
-          <ul class="filter__list">
-            <li class="filter__item">
-              <input class="filter__color-checkbox" id="color-black" type="checkbox" name="color" value="black">
-              <label for="color-black">Черный</label>
+        <fieldset class="form__fields">
+          <legend class="form__title">Цвет</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label>
+                <input class="form__input" type="checkbox" name="color" value="black">
+                <span class="form__label">Черный</span>
+              </label>
             </li>
-            <li class="filter__item">
-              <input class="filter__color-checkbox" id="color-white" type="checkbox" name="color" value="white">
-              <label for="color-white">Белый</label>
+
+            <li class="form__item">
+              <label>
+                <input class="form__input" type="checkbox" name="color" value="white">
+                <span class="form__label">Белый</span>
+              </label>
             </li>
-            <li class="filter__item">
-              <input class="filter__color-checkbox" id="color-blue" type="checkbox" name="color" value="blue">
-              <label for="color-blue">Синий</label>
+
+            <li class="form__item">
+              <label>
+                <input class="form__label" type="checkbox" name="color" value="blue">
+                <span class="form__label">Синий</span>
+              </label>
             </li>
-            <li class="filter__item">
-              <input class="filter__color-checkbox" id="color-red" type="checkbox" name="color" value="red">
-              <label for="color-red">Красный</label>
+
+            <li class="form__item">
+              <label>
+                <input class="form__label" type="checkbox" name="color" value="red">
+                <span class="form__label">Красный</span>
+              </label>
             </li>
-            <li class="filter__item">
-              <input class="filter__color-checkbox" id="color-pink" type="checkbox" name="color" value="pink">
-              <label for="color-pink">Розовый</label>
+
+            <li class="form__item">
+              <label>
+                <input class="form__label" type="checkbox" name="color" value="pink">
+                <span class="form__label">Розовый</span>
+              </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="filter__bluetooth-fields">
-          <legend class="filter__fieldset-title">Bluetooth</legend>
-          <ul class="filter__list">
-            <li class="filter__item">
-              <input class="filter__bluetooth-radio" type="radio" name="bluetooth" id="bluetooth-yes" value="yes">
-              <label for="bluetooth-yes">Есть</label>
+        <fieldset class="form__fields">
+          <legend class="form__title">Bluetooth</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label>
+                <input class="form__input" type="radio" name="bluetooth" value="yes">
+                <span class="form__label">Есть</span>
+              </label>
             </li>
-            <li class="filter__item">
-              <input class="filter__bluetooth-radio" type="radio" name="bluetooth" id="bluetooth-no" value="no">
-              <label for="bluetooth-no">Нет</label>
+            <li class="form__item">
+              <label>
+                <input class="form__input" type="radio" name="bluetooth" value="no">
+                <span class="form__label">Нет</span>
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -109,38 +122,51 @@
     </section>
 
     <section class="sorting">
-      <h2>Сортировка</h2>
+      <h2 class="content__section-title">Сортировка</h2>
 
-      <form class="sorting__form" action="#" method="get">
-        <fieldset class="sorting__fields-keys">
-          <legend class="sorting__fieldset-title">Сортировка:</legend>
-          <ul class="sorting__list">
-            <li class="sorting__item">
-              <input class="sorting__radio" id="by-price" type="radio" name="sorting-type">
-              <label for="by-price">По цене</label>
+      <form class="sorting form" action="#" method="get">
+        <fieldset class="form__fields">
+          <legend class="form__title">Сортировка:</legend>
+          <ul class="form__list">
+            <li class="form__item">
+              <label>
+                <input class="form__input" type="radio" name="sorting-type">
+                <span class="form__label">По цене</span>
+              </label>
             </li>
-            <li class="sorting__item">
-              <input class="sorting__radio" id="by-type" type="radio" name="sorting-type">
-              <label for="by-type">По типу</label>
+
+            <li class="form__item">
+              <label>
+                <input class="form__input" type="radio" name="sorting-type">
+                <span class="form__label">По типу</span>
+              </label>
             </li>
-            <li class="sorting__item">
-              <input class="sorting__radio" id="by-pop" type="radio" name="sorting-type">
-              <label for="by-pop">По популярности</label>
+
+            <li class="form__item">
+              <label>
+                <input class="form__input" type="radio" name="sorting-type">
+                <span class="form__label">По популярности</span>
+              </label>
             </li>
           </ul>
         </fieldset>
 
 
-        <fieldset class="sorting__fields-direction">
+        <fieldset class="form__fields">
           <legend class="sorting__fieldset-title visually-hidden">Направления сортировки</legend>
-          <ul class="sorting__list">
-            <li class="sorting__item">
-              <input class="sorting__radio" id="descending-direction" type="radio" name="sorting-direction">
-              <label class="visually-hidden" for="descending-direction">По убыванию</label>
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="visually-hidden">
+                <input class="form__input" type="radio" name="sorting-direction">
+                <span class="form__label">По убыванию</span>
+              </label>
             </li>
-            <li class="sorting__item">
-              <input class="sorting__radio" id="ascending-direction" type="radio" name="sorting-direction">
-              <label class="visually-hidden" for="ascending-direction">По возрастанию</label>
+
+            <li class="form__item">
+              <label class="visually-hidden">
+                <input class="form__input" type="radio" name="sorting-direction">
+                <span class="form__label">По возрастанию</span>
+              </label>
             </li>
           </ul>
         </fieldset>
