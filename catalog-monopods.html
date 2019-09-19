@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -13,10 +15,10 @@
         <img class="logo page-header__logo" src="img/logo.svg" width="163" height="35"
           alt="Интернет магазин гаджетов Device">
       </a>
-      <ul class="main-menu">
+      <ul class="main-menu list-format">
         <li class="main-menu__item">
           <a href="#">Каталог товаров</a>
-          <ul class="sub-menu">
+          <ul class="sub-menu list-format">
             <li class="sub-menu__item"><a href="#">Виртуальная реальность</a></li>
             <li class="sub-menu__item"><a href="#">Моноподы для селфи</a></li>
             <li class="sub-menu__item"><a href="#">Экшн-камеры</a></li>
@@ -30,10 +32,10 @@
         <li class="main-menu__item"><a href="#">Контакты</a></li>
       </ul>
 
-      <form class="search-form" action="#" method="post">
-        <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-        <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
-        <button type="submit">Найти</button>
+      <form class="search-form" action="#" method="get">
+        <label class="search-form__label" for="search-field">Поиск по сайту</label>
+        <input class="search-form__field" type="search" name="search" id="search-field" placeholder="Введите текст">
+        <button class="search-form__button" type="submit">Найти</button>
       </form>
 
       <a class="user-button page-navigation__button" href="#">Валентин Петухов</a>
@@ -45,22 +47,22 @@
 
   <main class="content">
     <h1 class="content__page-title">Моноподы для селфи</h1>
-    <ul class="breadcrumbs">
+    <ul class="breadcrumbs list-format">
       <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
       <li class="breadcrumbs__item"><a href="#">Каталог товаров</a></li>
       <li class="breadcrumbs__item">Моноподы для селфи</li>
     </ul>
 
-    <section class="filter">
-      <h2 class="content__section-title">Фильтр:</h2>
+    <section class="filters">
+      <h2 class="content__section-title filter-sorting-title filters__title">Фильтр:</h2>
 
       <form class="filter form" action="#" method="get">
 
-        <label>Стоимость</label>
+        <label class="form__title">Стоимость</label>
 
         <fieldset class="form__fields">
           <legend class="form__title">Цвет</legend>
-          <ul class="form__list">
+          <ul class="form__list list-format">
             <li class="form__item">
               <label>
                 <input class="form__input" type="checkbox" name="color" value="black">
@@ -77,21 +79,21 @@
 
             <li class="form__item">
               <label>
-                <input class="form__label" type="checkbox" name="color" value="blue">
+                <input class="form__input" type="checkbox" name="color" value="blue">
                 <span class="form__label">Синий</span>
               </label>
             </li>
 
             <li class="form__item">
               <label>
-                <input class="form__label" type="checkbox" name="color" value="red">
+                <input class="form__input" type="checkbox" name="color" value="red">
                 <span class="form__label">Красный</span>
               </label>
             </li>
 
             <li class="form__item">
               <label>
-                <input class="form__label" type="checkbox" name="color" value="pink">
+                <input class="form__input" type="checkbox" name="color" value="pink">
                 <span class="form__label">Розовый</span>
               </label>
             </li>
@@ -100,7 +102,7 @@
 
         <fieldset class="form__fields">
           <legend class="form__title">Bluetooth</legend>
-          <ul class="form__list">
+          <ul class="form__list list-format">
             <li class="form__item">
               <label>
                 <input class="form__input" type="radio" name="bluetooth" value="yes">
@@ -116,18 +118,18 @@
           </ul>
         </fieldset>
 
-        <button class="content__button" type="submit">Показать</button>
+        <button class="filters__button content__button" type="submit">Показать</button>
 
       </form>
     </section>
 
     <section class="sorting">
-      <h2 class="content__section-title">Сортировка</h2>
+      <h2 class="content__section-title filter-sorting-title">Сортировка:</h2>
 
-      <form class="sorting form" action="#" method="get">
+      <form class="sort form" action="#" method="get">
         <fieldset class="form__fields">
-          <legend class="form__title">Сортировка:</legend>
-          <ul class="form__list">
+          <legend class="form__title visually-hidden">Сортировать:</legend>
+          <ul class="form__list list-format">
             <li class="form__item">
               <label>
                 <input class="form__input" type="radio" name="sorting-type">
@@ -154,16 +156,16 @@
 
         <fieldset class="form__fields">
           <legend class="sorting__fieldset-title visually-hidden">Направления сортировки</legend>
-          <ul class="form__list">
+          <ul class="form__list list-format">
             <li class="form__item">
-              <label class="visually-hidden">
+              <label>
                 <input class="form__input" type="radio" name="sorting-direction">
                 <span class="form__label">По убыванию</span>
               </label>
             </li>
 
             <li class="form__item">
-              <label class="visually-hidden">
+              <label>
                 <input class="form__input" type="radio" name="sorting-direction">
                 <span class="form__label">По возрастанию</span>
               </label>
@@ -178,7 +180,7 @@
 
     <section class="products">
       <h2 class="content__section-title visually-hidden">Карточки товаров "Моноподы для селфи"</h2>
-      <ul class="products-list">
+      <ul class="products-list list-format">
         <li class="product-item">
 
           <img class="product-item__image" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -242,7 +244,7 @@
 
           <p class="product-item__price">4900 руб.</p>
 
-          <div class="product-item__hover visually-hidden">
+          <div class="product-item__hover">
             <a class="content__button" a="#">В корзину</a>
             <a class="add-to-compare-button" a="#">Добавить к сравнению</a>
           </div>
