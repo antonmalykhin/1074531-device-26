@@ -12,7 +12,7 @@
   <header class="page-header">
     <nav class="page-navigation">
       <a href="index.html">
-        <img class="logo page-header__logo" src="img/logo.svg" width="163" height="35"
+        <img class="logo page-header__logo_clickable" src="img/logo.svg" width="163" height="35"
           alt="Интернет магазин гаджетов Device">
       </a>
       <ul class="main-menu list-format">
@@ -38,19 +38,23 @@
         <button class="search-form__button" type="submit">Найти</button>
       </form>
 
-      <a class="user-button page-navigation__button" href="#">Валентин Петухов</a>
-      <a class="logout-button page-navigation__button" href="#">Выйти</a>
-      <a class="compare-button page-navigation__button" href="#">Сравнить</a>
-      <a class="cart-button page-navigation__button" href="#">Корзина</a>
+      <a class="user-button header-user-menu__button" href="#">Валентин Петухов</a>
+      <a class="logout-button header-user-menu__button" href="#">Выйти</a>
+      <a class="compare-button header-user-menu__button" href="#">Сравнить</a>
+      <a class="cart-button header-user-menu__button" href="#">Корзина</a>
     </nav>
   </header>
 
   <main class="content">
     <h1 class="content__page-title">Моноподы для селфи</h1>
-    <ul class="breadcrumbs list-format">
+
+    <ul class="breadcrumbs list-format" aria-label="Меню хлебные крошки">
       <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
       <li class="breadcrumbs__item"><a href="#">Каталог товаров</a></li>
-      <li class="breadcrumbs__item">Моноподы для селфи</li>
+      <li class="breadcrumbs__item">
+        <span class="visually-hidden">Текущий пункт:</span>
+        Моноподы для селфи
+      </li>
     </ul>
 
     <section class="filters">
@@ -65,7 +69,7 @@
           <ul class="form__list list-format">
             <li class="form__item">
               <label>
-                <input class="form__input" type="checkbox" name="color" value="black">
+                <input class="form__input" type="checkbox" name="color" value="black" checked>
                 <span class="form__label">Черный</span>
               </label>
             </li>
@@ -79,14 +83,14 @@
 
             <li class="form__item">
               <label>
-                <input class="form__input" type="checkbox" name="color" value="blue">
+                <input class="form__input" type="checkbox" name="color" value="blue" checked>
                 <span class="form__label">Синий</span>
               </label>
             </li>
 
             <li class="form__item">
               <label>
-                <input class="form__input" type="checkbox" name="color" value="red">
+                <input class="form__input" type="checkbox" name="color" value="red" checked>
                 <span class="form__label">Красный</span>
               </label>
             </li>
@@ -105,7 +109,7 @@
           <ul class="form__list list-format">
             <li class="form__item">
               <label>
-                <input class="form__input" type="radio" name="bluetooth" value="yes">
+                <input class="form__input" type="radio" name="bluetooth" value="yes" checked>
                 <span class="form__label">Есть</span>
               </label>
             </li>
@@ -191,7 +195,7 @@
 
           <p class="product-item__price">500 руб.</p>
 
-          <div class="product-item__hover visually-hidden">
+          <div class="product-item__hover">
             <a class="content__button" href="#">В корзину</a>
             <a class="add-to-compare-button" href="#">Добавить к сравнению</a>
           </div>
@@ -209,7 +213,7 @@
 
           <p class="product-item__price">1500 руб.</p>
 
-          <div class="product-item__hover visually-hidden">
+          <div class="product-item__hover">
             <a class="content__button" href="#">В корзину</a>
             <a class="add-to-compare-button" href="#">Добавить к сравнению</a>
           </div>
@@ -226,7 +230,7 @@
           </h3>
           <p class="product-item__price">2500 руб.</p>
 
-          <div class="product-item__hover visually-hidden">
+          <div class="product-item__hover ">
             <a class="content__button" href="#">В корзину</a>
             <a class="add-to-compare-button" href="#">Добавить к сравнению</a>
           </div>
@@ -245,18 +249,18 @@
           <p class="product-item__price">4900 руб.</p>
 
           <div class="product-item__hover">
-            <a class="content__button" a="#">В корзину</a>
-            <a class="add-to-compare-button" a="#">Добавить к сравнению</a>
+            <a class="content__button" href="#">В корзину</a>
+            <a class="add-to-compare-button" href="#">Добавить к сравнению</a>
           </div>
 
         </li>
       </ul>
 
       <div class="pagination">
-        <a class="pagination__nav-back" href="#">Назад</a>
-        <ul class="pagination__list">
+        <a class="pagination__nav" href="#">Назад</a>
+        <ul class="pagination__list list-format">
           <li class="pagination__item">
-            <a class="pagination_link">1</a>
+            <a class="pagination_link current">1</a>
           </li>
           <li class="pagination__item">
             <a class="pagination_link" href="#">2</a>
@@ -265,7 +269,7 @@
             <a class="pagination_link" href="#">3</a>
           </li>
         </ul>
-        <a class="pagination__nav-front" href="#">Вперед</a>
+        <a class="pagination__nav" href="#">Вперед</a>
       </div>
     </section>
   </main>
@@ -273,30 +277,39 @@
   <footer class="page-footer">
     <div class="page-footer__left-side">
       <a href="index.html">
-        <img class="logo page-footer__logo" src="img/logo.svg" width="163" height="35"
+        <img class="logo page-footer__logo_clickable" src="img/logo-footer.svg" width="163" height="35"
           alt="Интернет магазин гаджетов Device">
       </a>
       <p class="page-footer__text">г. Москва, ул. Строителей, 15</p>
     </div>
 
     <div class="page-footer__mid-side">
-      <ul>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
+      <ul class="page-footer__menu list-format">
+        <li class="page-footer__menu-item">
+          <a href="#">Доставка</a></li>
+        <li class="page-footer__menu-item">
+          <a href="#">Гарантия</a></li>
+        <li class="page-footer__menu-item">
+          <a href="#">Контакты</a></li>
       </ul>
-      <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Twitter</a></li>
+      <ul class="page-footer__social list-format">
+        <li>
+          <a class="page-footer__social-item facebook" href="#" aria-label="facebook"></a>
+        </li>
+        <li>
+          <a class="page-footer__social-item instagram" href="#" aria-label="instagram"></a>
+        </li>
+        <li>
+          <a class="page-footer__social-item twitter" href="#" aria-label="twitter"></a>
+        </li>
       </ul>
     </div>
 
     <div>
-      <a class="user-button page-footer__button" href="#">Валентин Петухов</a>
-      <a class="logout-button page-footer__button" href="#">Войти</a>
-      <a class="compare-button page-footer__button" href="#">Сравнить</a>
-      <a class="cart-button page-footer__button" href="#">Корзина</a>
+      <a class="user-button footer-user-menu__button" href="#">Валентин Петухов</a>
+      <a class="logout-button footer-user-menu__button" href="#">Войти</a>
+      <a class="compare-button footer-user-menu__button" href="#">Сравнить</a>
+      <a class="cart-button footer-user-menu__button" href="#">Корзина</a>
       <p>Тел.: +7 (495) 495-95-95</p>
       <a class="page-footer__dev-link" href="https://htmlacademy.ru/intensive/htmlcss">
         <img class="page-footer__dev-logo" src="img/logo-html-academy.svg" width="27" height="35" alt="HTML Academy">

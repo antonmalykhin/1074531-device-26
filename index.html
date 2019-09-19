@@ -38,9 +38,9 @@
         <button class="search-form__button" type="submit">Найти</button>
       </form>
 
-      <a class="login-button page-navigation__button" href="#">Войти</a>
-      <a class="compare-button page-navigation__button" href="#">Сравнить</a>
-      <a class="cart-button page-navigation__button" href="#">Корзина</a>
+      <a class="login-button header-user-menu__button" href="#">Войти</a>
+      <a class="compare-button header-user-menu__button" href="#">Сравнить</a>
+      <a class="cart-button header-user-menu__button" href="#">Корзина</a>
     </nav>
   </header>
 
@@ -168,13 +168,13 @@
       <div class="services__left-side">
         <ul class="services__links list-format">
           <li class="services__link-item">
-            <a class="services__button" href="#">Доставка</a>
+            <a class="content__button services__button" href="#">Доставка</a>
           </li>
           <li class="services__link-item">
-            <a class="services__button" href="#">Гарантия</a>
+            <a class="content__button services__button" href="#">Гарантия</a>
           </li>
           <li class="services__link-item">
-            <a class="services__button" href="#">Кредит</a>
+            <a class="content__button services__button" href="#">Кредит</a>
           </li>
         </ul>
       </div>
@@ -266,21 +266,30 @@
 
     <div class="page-footer__mid-side">
       <ul class="page-footer__menu list-format">
-        <li class="page-footer__menu-item"><a href="#">Доставка</a></li>
-        <li class="page-footer__menu-item"><a href="#">Гарантия</a></li>
-        <li class="page-footer__menu-item"><a href="#">Контакты</a></li>
+        <li class="page-footer__menu-item">
+          <a href="#">Доставка</a></li>
+        <li class="page-footer__menu-item">
+          <a href="#">Гарантия</a></li>
+        <li class="page-footer__menu-item">
+          <a href="#">Контакты</a></li>
       </ul>
       <ul class="page-footer__social list-format">
-        <li class="page-footer__social-item"><a href="#">Facebook</a></li>
-        <li class="page-footer__social-item"><a href="#">Instagram</a></li>
-        <li class="page-footer__social-item"><a href="#">Twitter</a></li>
+        <li>
+          <a class="page-footer__social-item facebook" href="#" aria-label="facebook"></a>
+        </li>
+        <li>
+          <a class="page-footer__social-item instagram" href="#" aria-label="instagram"></a>
+        </li>
+        <li>
+          <a class="page-footer__social-item twitter" href="#" aria-label="twitter"></a>
+        </li>
       </ul>
     </div>
 
     <div class="page-footer__right-side">
-      <a class="login-button page-footer__button" href="#">Войти</a>
-      <a class="compare-button page-footer__button" href="#">Сравнить</a>
-      <a class="cart-button page-footer__button" href="#">Корзина</a>
+      <a class="login-button footer-user-menu__button" href="#">Войти</a>
+      <a class="compare-button footer-user-menu__button" href="#">Сравнить</a>
+      <a class="cart-button footer-user-menu__button" href="#">Корзина</a>
       <p class="page-footer__text">Тел.: +7 (495) 495-95-95</p>
       <a class="page-footer__dev-link" href="https://htmlacademy.ru/intensive/htmlcss">
         <img class="page-footer__dev-logo" src="img/logo-html-academy.svg" width="27" height="35" alt="HTML Academy">
@@ -304,13 +313,13 @@
         placeholder="В свободной форма"></textarea>
       <button class="write-us__button content__button" type="submit">Отправить</button>
     </form>
-    <button class="close_button" type="button">Закрыть</button>
+    <button class="close_button" type="button" aria-label="Закрыть"></button>
   </section>
 
   <section class="popup-map">
     <h2 class="visually-hidden content__section-title">Карта с адресом</h2>
     <img src="img/map-big.jpg" alt="Адрес офиса: г. Москва, ул. Строителей, 15">
-    <button class="close_button" type="button">Закрыть</button>
+    <button class="close_button" type="button" aria-label="Закрыть"></button>
   </section>
 
 </body>
