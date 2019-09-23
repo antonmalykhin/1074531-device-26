@@ -75,6 +75,8 @@ a {
 }
 
 .list-format {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -104,6 +106,15 @@ a {
   letter-spacing: 4px;
 }
 
+.main-menu a:hover,
+.main-menu a:focus {
+  opacity: 0.6;
+}
+
+.main-menu a:active {
+  opacity: 0.3;
+}
+
 .sub-menu a {
   font-family: inherit;
   font-size: 15px;
@@ -112,8 +123,16 @@ a {
   letter-spacing: 0;
 }
 
-.header-user-menu__button,
-.footer-user-menu__button {
+.sub-menu a:hover,
+.sub-menu a:focus {
+  opacity: 0.6;
+}
+
+.sub-menu a:active {
+  opacity: 0.3;
+}
+
+.header-user-menu__button {
   font-family: inherit;
   font-size: 15px;
   line-height: 30px;
@@ -121,37 +140,29 @@ a {
   color: #000000;
 }
 
-.footer-user-menu__button {
-  color: #ffffff;
-}
-
-.page-header__logo_clickable:hover,
-.page-footer__logo_clickable:hover,
-.main-menu a:hover,
-.sub-menu a:hover,
 .header-user-menu__button:hover,
-.footer-user-menu__button:hover,
-.page-footer__dev-link:hover,
-.page-header__logo_clickable:focus,
-.page-footer__logo_clickable:focus,
-.main-menu a:focus,
-.sub-menu a:focus,
-.header-user-menu__button:focus,
-.footer-user-menu__button:focus,
-.page-footer__dev-link:focus {
+.header-user-menu__button:focus {
   opacity: 0.6;
 }
 
-
-.page-header__logo_clickable:active,
-.page-footer__logo_clickable:active,
-.main-menu a:active,
-.sub-menu a:active,
-.header-user-menu__button:active,
-.footer-user-menu__button:active,
-.page-footer__dev-link:active {
+.header-user-menu__button:active {
   opacity: 0.3;
 }
+
+.page-header__logo--clickable:hover,
+.page-header__logo--clickable:focus {
+  opacity: 0.6;
+}
+
+.page-header__logo--clickable:active {
+  opacity: 0.3;
+}
+
+/* ------------------!!!--------------------
+
+                Search Form
+
+  ------------------!!!-------------------- */
 
 .search-form__label {
   opacity: 0.3;
@@ -200,6 +211,11 @@ a {
   background-color: #000000;
 }
 
+
+/* ------------------!!!-------------------- */
+
+
+
 /* Sliders */
 
 .slider__motto {
@@ -209,7 +225,11 @@ a {
   line-height: 56px;
 }
 
-.feature-item__text_big {
+.slider__button {
+  width: 220px;
+}
+
+.feature-item__text--big {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   font-size: 36px;
@@ -218,7 +238,7 @@ a {
 
 }
 
-.feature-item__text_small {
+.feature-item__text--small {
   font-size: 13px;
   line-height: 20px;
   color: #464646;
@@ -244,6 +264,7 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
 .vr {
   background-image: url("../img/popular-1.svg");
 }
@@ -299,7 +320,6 @@ a:active .popular__img {
   width: 160px;
 }
 
-
 .services__button:active {
   color: #f7e184;
 }
@@ -347,10 +367,29 @@ a:active .popular__img {
   color: #000000;
 }
 
+.about__button {
+  width: 260px;
+}
+
+/* Contacts */
+
+.contacts__button {
+  width: 260px;
+}
+
 /* Footer */
 
 .page-footer {
   background-color: #454545;
+}
+
+.page-footer__logo--clickable:hover,
+.page-footer__logo--clickable:focus {
+  opacity: 0.6;
+}
+
+.page-footer__logo--clickable:active {
+  opacity: 0.3;
 }
 
 .page-footer__text{
@@ -407,10 +446,32 @@ a:active .popular__img {
   background-image: url("../img/twetter.svg");
 }
 
-.about__button,
-.contacts__button {
-  width: 260px;
+.footer-user-menu__button {
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #ffffff;
 }
+
+.footer-user-menu__button:hover,
+.footer-user-menu__button:focus {
+  opacity: 0.6;
+}
+
+.footer-user-menu__button:active {
+  opacity: 0.3;
+}
+
+.page-footer__dev-link:hover,
+.page-footer__dev-link:focus {
+  opacity: 0.6;
+}
+
+.page-footer__dev-link:active {
+  opacity: 0.3;
+}
+
 
 /*  write us */
 
@@ -463,6 +524,7 @@ a:active .popular__img {
 }
 
 .write-us__button {
+  width: 200px;
   background-color: transparent;
   border: none;
 }
@@ -508,10 +570,9 @@ a:active .popular__img {
 }
 
 .filters__button {
+  width: 200px;
   border: none;
   background-color: transparent;
-  width: 200px;
-
 }
 
 .form__title {
@@ -568,6 +629,10 @@ a:active .popular__img {
 
 .product-item__hover a {
   margin-bottom: 20px;
+}
+
+.add-to-cart-button {
+  width: 200px;
 }
 
 .add-to-compare-button {

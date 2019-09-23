@@ -12,7 +12,7 @@
   <header class="page-header">
     <nav class="page-navigation">
       <a href="index.html">
-        <img class="logo page-header__logo_clickable" src="img/logo.svg" width="163" height="35"
+        <img class="page-header__logo page-header__logo--clickable" src="img/logo.svg" width="163" height="35"
           alt="Интернет магазин гаджетов Device">
       </a>
       <ul class="main-menu list-format">
@@ -46,11 +46,18 @@
   </header>
 
   <main class="content">
+
     <h1 class="content__page-title">Моноподы для селфи</h1>
 
     <ul class="breadcrumbs list-format" aria-label="Меню хлебные крошки">
-      <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-      <li class="breadcrumbs__item"><a href="#">Каталог товаров</a></li>
+      <li class="breadcrumbs__item">
+        <a href="index.html">Главная</a>
+      </li>
+
+      <li class="breadcrumbs__item">
+        <a href="#">Каталог товаров</a>
+      </li>
+
       <li class="breadcrumbs__item">
         <span class="visually-hidden">Текущий пункт:</span>
         Моноподы для селфи
@@ -58,6 +65,7 @@
     </ul>
 
     <section class="filters">
+
       <h2 class="content__section-title filter-sorting-title filters__title">Фильтр:</h2>
 
       <form class="filter form" action="#" method="get">
@@ -113,6 +121,7 @@
                 <span class="form__label">Есть</span>
               </label>
             </li>
+
             <li class="form__item">
               <label>
                 <input class="form__input" type="radio" name="bluetooth" value="no">
@@ -122,12 +131,13 @@
           </ul>
         </fieldset>
 
-        <button class="filters__button content__button" type="submit">Показать</button>
+        <button class="content__button filters__button" type="submit">Показать</button>
 
       </form>
     </section>
 
     <section class="sorting">
+
       <h2 class="content__section-title filter-sorting-title">Сортировка:</h2>
 
       <form class="sort form" action="#" method="get">
@@ -183,76 +193,59 @@
     </section>
 
     <section class="products">
+
       <h2 class="content__section-title visually-hidden">Карточки товаров "Моноподы для селфи"</h2>
+
       <ul class="products-list list-format">
         <li class="product-item">
-
           <img class="product-item__image" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-
           <h3 class="product-item__title">
             <a href="#">Любительская селфи-палка</a>
           </h3>
-
           <p class="product-item__price">500 руб.</p>
-
           <div class="product-item__hover">
-            <a class="content__button" href="#">В корзину</a>
+            <a class="content__button add-to-cart-button" href="#">В корзину</a>
             <a class="add-to-compare-button" href="#">Добавить к сравнению</a>
           </div>
-
         </li>
 
         <li class="product-item">
-
           <img class="product-item__image" src="img/item-2.jpg" width="360" height="380"
             alt="Профессиональная селфи-палка">
-
           <h3 class="product-item__title">
             <a href="#">Профессиональная селфи-палка</a>
           </h3>
-
           <p class="product-item__price">1500 руб.</p>
-
           <div class="product-item__hover">
-            <a class="content__button" href="#">В корзину</a>
+            <a class="content__button add-to-cart-button" href="#">В корзину</a>
             <a class="add-to-compare-button" href="#">Добавить к сравнению</a>
           </div>
-
         </li>
 
         <li class="product-item">
-
           <img class="product-item__image" src="img/item-3.jpg" width="360" height="380"
             alt="Непотопляемая селфи-палка">
-
           <h3 class="product-item__title">
             <a href="#">Непотопляемая селфи-палка</a>
           </h3>
           <p class="product-item__price">2500 руб.</p>
-
           <div class="product-item__hover ">
-            <a class="content__button" href="#">В корзину</a>
+            <a class="content__button add-to-cart-button" href="#">В корзину</a>
             <a class="add-to-compare-button" href="#">Добавить к сравнению</a>
           </div>
-
         </li>
 
         <li class="product-item">
-
           <img class="product-item__image" src="img/item-1.jpg" width="360" height="380"
             alt="Селфи-палка «Следуй за мной»">
-
           <h3 class="product-item__title">
             <a href="#">Селфи-палка «Следуй за мной»</a>
           </h3>
-
           <p class="product-item__price">4900 руб.</p>
-
           <div class="product-item__hover">
-            <a class="content__button" href="#">В корзину</a>
+            <a class="content__button add-to-cart-button" href="#">В корзину</a>
             <a class="add-to-compare-button" href="#">Добавить к сравнению</a>
           </div>
-
         </li>
       </ul>
 
@@ -277,7 +270,7 @@
   <footer class="page-footer">
     <div class="page-footer__left-side">
       <a href="index.html">
-        <img class="logo page-footer__logo_clickable" src="img/logo-footer.svg" width="163" height="35"
+        <img class="logo page-footer__logo--clickable" src="img/logo-footer.svg" width="163" height="35"
           alt="Интернет магазин гаджетов Device">
       </a>
       <p class="page-footer__text">г. Москва, ул. Строителей, 15</p>
@@ -286,19 +279,27 @@
     <div class="page-footer__mid-side">
       <ul class="page-footer__menu list-format">
         <li class="page-footer__menu-item">
-          <a href="#">Доставка</a></li>
+          <a href="#">Доставка</a>
+        </li>
+
         <li class="page-footer__menu-item">
-          <a href="#">Гарантия</a></li>
+          <a href="#">Гарантия</a>
+        </li>
+
         <li class="page-footer__menu-item">
-          <a href="#">Контакты</a></li>
+          <a href="#">Контакты</a>
+        </li>
       </ul>
+
       <ul class="page-footer__social list-format">
         <li>
           <a class="page-footer__social-item facebook" href="#" aria-label="facebook"></a>
         </li>
+
         <li>
           <a class="page-footer__social-item instagram" href="#" aria-label="instagram"></a>
         </li>
+
         <li>
           <a class="page-footer__social-item twitter" href="#" aria-label="twitter"></a>
         </li>
@@ -316,6 +317,7 @@
       </a>
     </div>
   </footer>
+
 </body>
 
 </html>
