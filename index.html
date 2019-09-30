@@ -80,45 +80,104 @@
 
       <div class="container">
         <div class="slider__border">
-          <div class="wrapper">
-            <h2 class="content__section-title visually-hidden">Специальные предложения</h2>
 
-            <article class="slider__item columns">
-              <h3 class="slider__title visually-hidden">Монопод</h3>
-              <div class="column">
-                <img class="slider__image" src="img/slider-1.png" width="384" height="486" alt="Монопод">
-              </div>
-              <div class="column right-side">
-                <p class="slider__motto">Делай селфи,<br> как Бен Стиллер!</p>
-                <p class="content__text slider__text">Самая длинная палка для селфи доступна в нашем магазине.<br>
-                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                </p>
-                <a class="content__button slider__button" href="#">Подробнее</a>
-                <ul class="features list-format">
-                  <li class="feature-item">
-                    <p class="feature-item__text--big">8,5 м</p>
-                    <p class="feature-item__text--small">Длина палки</p>
-                  </li>
-                  <li class="feature-item">
-                    <p class="feature-item__text--big">5 кг</p>
-                    <p class="feature-item__text--small">Вес палки</p>
-                  </li>
-                  <li class="feature-item">
-                    <p class="feature-item__text--big">Карбон</p>
-                    <p class="feature-item__text--small">Материал</p>
-                  </li>
-                </ul>
-              </div>
-            </article>
+          <h2 class="content__section-title visually-hidden">Специальные предложения</h2>
 
-            <article class="slider__item columns visually-hidden">
+
+          <input class="slider__btn visually-hidden" type="radio" name="slider_control" id="first" checked>
+          <input class="slider__btn visually-hidden" type="radio" name="slider_control" id="second">
+          <input class="slider__btn visually-hidden" type="radio" name="slider_control" id="third">
+
+
+          <label class="slider__label" for="first" aria-label="Монопод"></label>
+          <label class="slider__label" for="second" aria-label="Фитнес-браслет"></label>
+          <label class="slider__label" for="third" aria-label="Коптер"></label>
+
+
+          <article class="slider__item slider__item--one columns">
+            <h3 class="slider__title visually-hidden">Монопод</h3>
+
+            <div class="column left-side">
+              <img class="slider__image" src="img/slider-1.png" width="384" height="486" alt="Монопод">
+            </div>
+
+            <div class="column right-side">
+              <p class="slider__motto">Делай селфи,<br> как Бен Стиллер!</p>
+              <p class="content__text slider__text">Самая длинная палка для селфи доступна в нашем магазине.<br>
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+              </p>
+              <a class="content__button slider__button" href="#">Подробнее</a>
+              <ul class="features list-format">
+                <li class="feature-item">
+                  <p class="feature-item__text--big">8,5 м</p>
+                  <p class="feature-item__text--small">Длина палки</p>
+                </li>
+                <li class="feature-item">
+                  <p class="feature-item__text--big">5 кг</p>
+                  <p class="feature-item__text--small">Вес палки</p>
+                </li>
+                <li class="feature-item">
+                  <p class="feature-item__text--big">Карбон</p>
+                  <p class="feature-item__text--small">Материал</p>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="slider__item slider__item--two columns">
+            <h3 class="slider__title visually-hidden">Фитнес-браслет</h3>
+            <div class="column left-side">
+              <img class="slider__image" src="img/slider-2.png" width="345" height="485" alt="Монопод">
+            </div>
+            <div class="column right-side">
+              <p class="slider__motto">Худеем<br> правильно!</p>
+              <p class="content__text slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы
+                не пропускать занятия и соблюдать диету.
+              </p>
+              <a class="content__button slider__button" href="#">Подробнее</a>
+              <ul class="features list-format">
+                <li class="feature-item">
+                  <p class="feature-item__text--big">48 часов</p>
+                  <p class="feature-item__text--small">Без подзарядки</p>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="slider__item slider__item--three columns">
+            <h3 class="slider__title visually-hidden">Коптер</h3>
+            <div class="column left-side">
+              <img class="slider__image" src="img/slider-3.png" width="526" height="334" alt="Монопод">
+            </div>
+            <div class="column right-side">
+              <p class="slider__motto">Порхает как бабочка,<br>
+                жалит как пчела!</p>
+              <p class="content__text slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен
+                мощным лазером, замаскированным под стандартную камеру.
+
+              </p>
+              <a class="content__button slider__button" href="#">Подробнее</a>
+              <ul class="features list-format">
+                <li class="feature-item">
+                  <p class="feature-item__text--big">800 м</p>
+                  <p class="feature-item__text--small">Дальность полета</p>
+                </li>
+                <li class="feature-item">
+                  <p class="feature-item__text--big">50 м</p>
+                  <p class="feature-item__text--small">Радиус поражения</p>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- <article class="slider__item slider__item--two columns">
               <h3 class="slider__title visually-hidden">Фитнес-браслет</h3>
               <div class="column">
                 <img class="slider__image" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
               </div>
-              <div class="column">
+              <div class="column right-side">
                 <p class="slider__motto">Худеем правильно!</p>
-                <p class="slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы
+                <p class="slider__text slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы
                   не пропускать занятия и соблюдать диету.</p>
                 <a class="content__button slider__button" href="#">Подробнее</a>
                 <ul class="features list-format">
@@ -132,14 +191,14 @@
               </div>
             </article>
 
-            <article class="slider__item columns visually-hidden">
+            <article class="slider__item slider__item--three columns">
               <h3 class="slider__title visually-hidden">Коптер</h3>
               <div class="column">
                 <img class="slider__image" src="img/slider-3.png" width="526" height="334" alt="Коптер">
               </div>
-              <div class="column">
+              <div class="column right-side">
                 <p class="slider__motto">Порхает как бабочка, жалит как пчела!</p>
-                <p class="slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен
+                <p class="content__text slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен
                   мощным лазером, замаскированным под стандартную камеру.</p>
                 <a class="content__button slider__button" href="#">Подробнее</a>
                 <ul class="features list-format">
@@ -153,8 +212,8 @@
                   </li>
                 </ul>
               </div>
-            </article>
-          </div>
+            </article> -->
+
         </div>
       </div>
     </section>
