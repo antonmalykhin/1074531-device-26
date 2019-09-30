@@ -169,51 +169,6 @@
               </ul>
             </div>
           </article>
-
-          <!-- <article class="slider__item slider__item--two columns">
-              <h3 class="slider__title visually-hidden">Фитнес-браслет</h3>
-              <div class="column">
-                <img class="slider__image" src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
-              </div>
-              <div class="column right-side">
-                <p class="slider__motto">Худеем правильно!</p>
-                <p class="slider__text slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы
-                  не пропускать занятия и соблюдать диету.</p>
-                <a class="content__button slider__button" href="#">Подробнее</a>
-                <ul class="features list-format">
-                  <li class="feature-item">
-
-                    <p class="feature-item__text--big">48 часов</p>
-                    <p class="feature-item__text--small">Без подзарядки</p>
-
-                  </li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="slider__item slider__item--three columns">
-              <h3 class="slider__title visually-hidden">Коптер</h3>
-              <div class="column">
-                <img class="slider__image" src="img/slider-3.png" width="526" height="334" alt="Коптер">
-              </div>
-              <div class="column right-side">
-                <p class="slider__motto">Порхает как бабочка, жалит как пчела!</p>
-                <p class="content__text slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен
-                  мощным лазером, замаскированным под стандартную камеру.</p>
-                <a class="content__button slider__button" href="#">Подробнее</a>
-                <ul class="features list-format">
-                  <li class="feature-item">
-                    <p class="feature-item__text--big">800 м</p>
-                    <p class="feature-item__text--small">Дальность полета</p>
-                  </li>
-                  <li class="feature-item">
-                    <p class="feature-item__text--big">50 м</p>
-                    <p class="feature-item__text--small">Радиус
-                  </li>
-                </ul>
-              </div>
-            </article> -->
-
         </div>
       </div>
     </section>
@@ -284,7 +239,8 @@
       <div class="container">
         <div class="columns">
           <div class="services__left-side column">
-            <ul class="services__links list-format">
+
+            <!-- <ul class="services__links list-format">
               <li class="services__link-item">
                 <a class="content__button services__button" href="#">Доставка</a>
               </li>
@@ -294,12 +250,19 @@
               <li class="services__link-item">
                 <a class="content__button services__button" href="#">Кредит</a>
               </li>
-            </ul>
+            </ul> -->
+
+            <input class="services__input visually-hidden" type="radio" name="service" id="delivery" checked>
+            <input class="services__input visually-hidden" type="radio" name="service" id="warranty">
+            <input class="services__input visually-hidden" type="radio" name="service" id="credit">
+            <label class="content__button services__button" for="delivery">Доставка</label>
+            <label class="content__button services__button" for="warranty">Гарантия</label>
+            <label class="content__button services__button" for="credit">Кредит</label>
           </div>
 
           <div class="services__right-side column">
             <ul class="services__list list-format">
-              <li class="services__item delivery visually-hidden">
+              <li class="services__item delivery">
                 <h3 class="content__section-title services__title">Доставка</h3>
                 <p class="content__text services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
                   совершенно
@@ -313,7 +276,7 @@
                   переживайте,мы
                   выдадим вам новый. Товар, не дом, конечно же.</p>
               </li>
-              <li class="services__item credit ">
+              <li class="services__item credit visually-hidden">
                 <h3 class="content__section-title services__title">Кредит</h3>
                 <p class="content__text services__text">Залезть в долговую яму стало проще! Кредитные консультанты
                   подберут для вас
@@ -477,7 +440,6 @@
     <img src="img/map-big.jpg" alt="Адрес офиса: г. Москва, ул. Строителей, 15">
 
     <button class="close_button" type="button" aria-label="Закрыть"></button>
-
   </section>
 </body>
 
