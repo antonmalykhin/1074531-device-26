@@ -77,23 +77,24 @@
   <main class="content">
 
     <div class="container">
+      <div class="content__wrapper">
+        <h1 class="content__page-title">Моноподы для селфи</h1>
 
-      <h1 class="content__page-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs list-format" aria-label="Меню хлебные крошки">
+          <li class="breadcrumbs__item">
+            <a href="index.html">Главная</a>
+          </li>
 
-      <ul class="breadcrumbs list-format" aria-label="Меню хлебные крошки">
-        <li class="breadcrumbs__item">
-          <a href="index.html">Главная</a>
-        </li>
+          <li class="breadcrumbs__item">
+            <a href="#">Каталог товаров</a>
+          </li>
 
-        <li class="breadcrumbs__item">
-          <a href="#">Каталог товаров</a>
-        </li>
-
-        <li class="breadcrumbs__item">
-          <span class="visually-hidden">Текущий пункт:</span>
-          Моноподы для селфи
-        </li>
-      </ul>
+          <li class="breadcrumbs__item">
+            <span class="visually-hidden">Текущий пункт:</span>
+            Моноподы для селфи
+          </li>
+        </ul>
+      </div>
     </div>
 
 
@@ -106,7 +107,7 @@
           <div class="column column--right-side">
             <section class="sorting ">
 
-              <h2 class="content__section-title filter-sorting-title">Сортировка:</h2>
+              <h2 class="content__section-title filter-sorting-title sorting__title">Сортировка:</h2>
 
               <form class="sort form" action="#" method="get">
                 <fieldset class="form__fields">
@@ -114,21 +115,21 @@
                   <ul class="form__list list-format">
                     <li class="form__item">
                       <label>
-                        <input class="form__input" type="radio" name="sorting-type">
+                        <input class="form__input visually-hidden" type="radio" name="sorting-type" checked>
                         <span class="form__label">По цене</span>
                       </label>
                     </li>
 
                     <li class="form__item">
                       <label>
-                        <input class="form__input" type="radio" name="sorting-type">
+                        <input class="form__input visually-hidden" type="radio" name="sorting-type">
                         <span class="form__label">По типу</span>
                       </label>
                     </li>
 
                     <li class="form__item">
                       <label>
-                        <input class="form__input" type="radio" name="sorting-type">
+                        <input class="form__input visually-hidden" type="radio" name="sorting-type">
                         <span class="form__label">По популярности</span>
                       </label>
                     </li>
@@ -138,18 +139,21 @@
 
                 <fieldset class="form__fields">
                   <legend class="sorting__fieldset-title visually-hidden">Направления сортировки</legend>
-                  <ul class="form__list list-format">
-                    <li class="form__item">
+                  <ul class="form__list form__direction-list list-format">
+                    <li class="form__item form__direction-item">
                       <label>
-                        <input class="form__input" type="radio" name="sorting-direction">
-                        <span class="form__label">По убыванию</span>
+                        <input class="form__input form__direction-input visually-hidden" type="radio"
+                          name="sorting-direction">
+                        <span class="form__direction-label form__direction-label--up"
+                          aria-label="По возрастанию"></span>
                       </label>
                     </li>
 
-                    <li class="form__item">
+                    <li class="form__item form__direction-item">
                       <label>
-                        <input class="form__input" type="radio" name="sorting-direction">
-                        <span class="form__label">По возрастанию</span>
+                        <input class="form__input form__direction-input visually-hidden" type="radio"
+                          name="sorting-direction" checked>
+                        <span class="form__direction-label form__direction-label--down" aria-label="По убыванию"></span>
                       </label>
                     </li>
                   </ul>
