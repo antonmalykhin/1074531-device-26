@@ -10,64 +10,70 @@
 
 <body>
   <header class="page-header">
-    <nav class="page-navigation container">
-      <a class="page-header__logo-container" aria-current="page">
-        <img class="page-header__logo" src="img/logo.svg" width="163" height="35"
-          alt="Интернет магазин гаджетов Device">
-      </a>
+    <nav class="page-navigation">
+      <div class="container">
+        <div class="page-header__background">
+          <a class="page-header__logo-container" aria-current="page">
+            <img class="page-header__logo" src="img/logo.svg" width="163" height="35"
+              alt="Интернет магазин гаджетов Device">
+          </a>
 
-      <div class="top">
-        <div class="columns">
-          <div class="column left-column">
-            <form class="search-form" action="#" method="get">
+          <div class="top">
+            <div class="columns">
+              <div class="column left-column">
+                <form class="search-form" action="#" method="get">
 
-              <label class="search-form__label visually-hidden" for="search-field">Поиск по сайту</label>
+                  <label class="search-form__label visually-hidden" for="search-field">Поиск по сайту</label>
 
-              <input class="search-form__field" type="search" name="search" id="search-field"
-                placeholder="Поиск по сайту">
+                  <input class="search-form__field" type="search" name="search" id="search-field"
+                    placeholder="Поиск по сайту">
 
-              <button class="search-form__button" type="button">Найти</button>
+                  <button class="search-form__button" type="button">Найти</button>
+                </form>
+              </div>
 
-            </form>
+              <div class="column right-column">
+                <a class="login-button header-user-menu__button" href="#">Войти</a>
+                <a class="compare-button header-user-menu__button" href="#">Сравнить</a>
+                <a class="cart-button header-user-menu__button" href="#">Корзина</a>
+              </div>
+            </div>
           </div>
 
-          <div class="column right-column">
-            <a class="login-button header-user-menu__button header-user-menu__button--out" href="#">Войти</a>
-            <a class="compare-button header-user-menu__button header-user-menu__button--out" href="#">Сравнить</a>
-            <a class="cart-button header-user-menu__button header-user-menu__button--out" href="#">Корзина</a>
-          </div>
-        </div>
-      </div>
+          <div class="main-menu">
+            <div class="columns">
+              <div class="column left-column">
+                <div class="main-menu__wrapper">
+                  <a class="main-menu__item main-menu__catalog" href="#">Каталог товаров</a>
+                  <div class="sub-menu">
+                    <div class="container">
+                      <div class="columns">
+                        <div class="column left-side">
+                          <a class="sub-menu__item" href="#">Виртуальная реальность</a>
+                          <a class="sub-menu__item" href="catalog-monopods.html">Моноподы для селфи</a>
+                          <a class="sub-menu__item" href="#">Экшн-камеры</a>
+                        </div>
+                        <div class="column middle-side">
+                          <a class="sub-menu__item" href="#">Фитнес-браслеты</a>
+                          <a class="sub-menu__item" href="">Умные часы</a>
+                        </div>
+                        <div class="column right-side">
+                          <a class="sub-menu__item" href="#">Квадрокоптеры</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-      <div class="main-menu columns">
-        <div class="column left-column">
-          <div class="main-menu__wrapper">
-            <a class="main-menu__item main-menu__catalog" href="#">Каталог товаров</a>
-            <div class="sub-menu container">
-              <div class="columns">
-                <div class="column left-side">
-                  <a class="sub-menu__item" href="#">Виртуальная реальность</a>
-                  <a class="sub-menu__item" href="catalog-monopods.html">Моноподы для селфи</a>
-                  <a class="sub-menu__item" href="#">Экшн-камеры</a>
-                </div>
-                <div class="column middle-side">
-                  <a class="sub-menu__item" href="#">Фитнес-браслеты</a>
-                  <a class="sub-menu__item" href="">Умные часы</a>
-                </div>
-                <div class="column right-side">
-                  <a class="sub-menu__item" href="#">Квадрокоптеры</a>
-                </div>
+              <div class="column right-column">
+                <a class="main-menu__item" href="#">Доставка</a>
+                <a class="main-menu__item" href="#">Гарантия</a>
+                <a class="main-menu__item" href="#">Контакты</a>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="column right-column">
-          <a class="main-menu__item" href="#">Доставка</a>
-          <a class="main-menu__item" href="#">Гарантия</a>
-          <a class="main-menu__item" href="#">Контакты</a>
-        </div>
-
       </div>
     </nav>
   </header>
@@ -173,63 +179,65 @@
       </div>
     </section>
 
-    <section class="popular container">
+    <section class="popular">
+      <div class="container">
 
-      <h2 class="content__section-title visually-hidden">Популярные товары</h2>
+        <h2 class="content__section-title visually-hidden">Популярные товары</h2>
 
-      <ul class="popular__list list-format columns">
-        <li class="popular__item">
-          <a href="#">
-            <div class="popular__img-bg">
-              <div class="popular__img vr"></div>
-            </div>
-            <h3 class="popular__title">Виртуальная реальность</h3>
-          </a>
-        </li>
+        <ul class="popular__list list-format">
+          <li class="popular__item popular__item--vr">
+            <a href="#">
+              <div class="popular__img-bg">
+                <div class="popular__img"></div>
+              </div>
+              <h3 class="popular__title">Виртуальная реальность</h3>
+            </a>
+          </li>
 
-        <li class="popular__item">
-          <a href="catalog-monopods.html">
-            <div class="popular__img-bg ">
-              <div class="popular__img monopods"></div>
-            </div>
-            <h3 class="popular__title">Моноподы для селфи</h3>
-          </a>
-        </li>
+          <li class="popular__item popular__item--monopods">
+            <a href="catalog-monopods.html">
+              <div class="popular__img-bg">
+                <div class="popular__img"></div>
+              </div>
+              <h3 class="popular__title">Моноподы для селфи</h3>
+            </a>
+          </li>
 
-        <li class="popular__item">
-          <a href="#">
-            <div class="popular__img-bg">
-              <div class="popular__img cameras"></div>
-            </div>
-            <h3 class="popular__title">Экшн-камеры</h3>
-          </a>
-        </li>
+          <li class="popular__item popular__item--cameras">
+            <a href="#">
+              <div class="popular__img-bg">
+                <div class="popular__img cameras"></div>
+              </div>
+              <h3 class="popular__title">Экшн-камеры</h3>
+            </a>
+          </li>
 
-        <li class="popular__item">
-          <a href="#">
-            <div class="popular__img-bg">
-              <div class="popular__img fitness-trackers"></div>
-            </div>
-            <h3 class="popular__title">Фитнес-браслеты</h3>
-          </a>
-        </li>
-        <li class="popular__item">
-          <a href="#">
-            <div class="popular__img-bg">
-              <div class="popular__img smart-watches"></div>
-            </div>
-            <h3 class="popular__title">Умные часы</h3>
-          </a>
-        </li>
-        <li class="popular__item">
-          <a href="#">
-            <div class="popular__img-bg">
-              <div class="popular__img copters"></div>
-            </div>
-            <h3 class="popular__title">Квадрокоптеры</h3>
-          </a>
-        </li>
-      </ul>
+          <li class="popular__item popular__item--fitness-trackers">
+            <a href="#">
+              <div class="popular__img-bg">
+                <div class="popular__img"></div>
+              </div>
+              <h3 class="popular__title">Фитнес-браслеты</h3>
+            </a>
+          </li>
+          <li class="popular__item popular__item--smart-watches">
+            <a href="#">
+              <div class="popular__img-bg">
+                <div class="popular__img"></div>
+              </div>
+              <h3 class="popular__title">Умные часы</h3>
+            </a>
+          </li>
+          <li class="popular__item popular__item--copters">
+            <a href="#">
+              <div class="popular__img-bg">
+                <div class="popular__img "></div>
+              </div>
+              <h3 class="popular__title">Квадрокоптеры</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="services">
@@ -239,19 +247,6 @@
       <div class="container">
         <div class="columns">
           <div class="services__left-side column">
-
-            <!-- <ul class="services__links list-format">
-              <li class="services__link-item">
-                <a class="content__button services__button" href="#">Доставка</a>
-              </li>
-              <li class="services__link-item">
-                <a class="content__button services__button" href="#">Гарантия</a>
-              </li>
-              <li class="services__link-item">
-                <a class="content__button services__button" href="#">Кредит</a>
-              </li>
-            </ul> -->
-
             <input class="services__input visually-hidden" type="radio" name="service" id="delivery" checked>
             <input class="services__input visually-hidden" type="radio" name="service" id="warranty">
             <input class="services__input visually-hidden" type="radio" name="service" id="credit">
@@ -288,41 +283,41 @@
       </div>
     </section>
 
-    <section class="brands container">
+    <section class="brands">
+      <div class="container">
 
-      <h2 class="content__section-title visually-hidden">Бренды</h2>
+        <h2 class="content__section-title visually-hidden">Бренды</h2>
 
-      <ul class="brands__list list-format columns">
-        <li class="brands__item">
-          <a class="brands__link" href="#">
-            <img class="brands__image" src="img/brand-1.jpg" width="260" height="100" alt="DJI">
-          </a>
-        </li>
+        <ul class="brands__list list-format columns">
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__image" src="img/brand-1.jpg" width="260" height="100" alt="DJI">
+            </a>
+          </li>
 
-        <li class="brands__item">
-          <a class="brands__link" href="#">
-            <img class="brands__image" src="img/brand-2.jpg" width="260" height="100" alt="SP GADGETS">
-          </a>
-        </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__image" src="img/brand-2.jpg" width="260" height="100" alt="SP GADGETS">
+            </a>
+          </li>
 
-        <li class="brands__item">
-          <a class="brands__link" href="#">
-            <img class="brands__image" src="img/brand-3.jpg" width="260" height="100" alt="GoPro">
-          </a>
-        </li>
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__image" src="img/brand-3.jpg" width="260" height="100" alt="GoPro">
+            </a>
+          </li>
 
-        <li class="brands__item">
-          <a class="brands__link" href="#">
-            <img class="brands__image" src="img/brand-4.jpg" width="260" height="100" alt="VIVE">
-          </a>
-        </li>
-      </ul>
-
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__image" src="img/brand-4.jpg" width="260" height="100" alt="VIVE">
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <div class="container">
       <div class="columns">
-
         <section class="about">
           <h2 class="content__section-title about__title">О нас</h2>
           <p class="content__text about__text">
@@ -353,6 +348,7 @@
           <a class="contacts__map" href="#"><img src="img/map.jpg" width="560" height="222"
               alt="Карта офиса по адресу улица Строителей, 15"></a>
           <a class="content__button contacts__button" href="#">Напишите нам</a>
+
         </section>
       </div>
     </div>
