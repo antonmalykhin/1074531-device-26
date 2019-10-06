@@ -246,32 +246,33 @@
 
       <div class="container">
         <div class="columns">
-          <div class="services__left-side column">
-            <input class="services__input visually-hidden" type="radio" name="service" id="delivery" checked>
-            <input class="services__input visually-hidden" type="radio" name="service" id="warranty">
-            <input class="services__input visually-hidden" type="radio" name="service" id="credit">
+          <form class="services__left-side column" action="#">
+            <input class="services__input visually-hidden" type="radio" name="service" id="delivery" value="delivery"
+              checked>
+            <input class="services__input visually-hidden" type="radio" name="service" id="warranty" value="warranty">
+            <input class="services__input visually-hidden" type="radio" name="service" id="credit" value="credit">
             <label class="content__button services__button" for="delivery">Доставка</label>
             <label class="content__button services__button" for="warranty">Гарантия</label>
             <label class="content__button services__button" for="credit">Кредит</label>
-          </div>
+          </form>
 
           <div class="services__right-side column">
             <ul class="services__list list-format">
-              <li class="services__item delivery">
+              <li class="services__item delivery block-show">
                 <h3 class="content__section-title services__title">Доставка</h3>
                 <p class="content__text services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
                   совершенно
                   бесплатно!
                   Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
               </li>
-              <li class="services__item warranty visually-hidden">
+              <li class="services__item warranty">
                 <h3 class="content__section-title services__title">Гарантия</h3>
                 <p class="content__text services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом —
                   не
                   переживайте,мы
                   выдадим вам новый. Товар, не дом, конечно же.</p>
               </li>
-              <li class="services__item credit visually-hidden">
+              <li class="services__item credit">
                 <h3 class="content__section-title services__title">Кредит</h3>
                 <p class="content__text services__text">Залезть в долговую яму стало проще! Кредитные консультанты
                   подберут для вас
@@ -443,6 +444,10 @@
 
     <button class="close_button" type="button" aria-label="Закрыть"></button>
   </section>
+
+  <script src="js/contact.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/services.js"></script>
 </body>
 
 </html>
