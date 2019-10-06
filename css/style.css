@@ -160,6 +160,7 @@ a {
 }
 
 .page-navigation .right-column {
+  width: 500px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -361,7 +362,7 @@ a {
   letter-spacing: 0px;
   line-height: 30px;
   color: #000000;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   border: 2px solid transparent;
   background-color: transparent;
@@ -1171,13 +1172,15 @@ a:active .popular__img {
 }
 
 .inner-page-footer__user-menu {
-  width: 454px;
+  width: 480px;
   display: flex;
   align-self: flex-start;
+  flex-wrap: wrap;
 }
 
 .inner-page-footer__user-menu-item {
   position: relative;
+  padding-left: 27px;
 }
 
 .inner-page-footer__user-menu-item::before {
@@ -1185,29 +1188,39 @@ a:active .popular__img {
   position: absolute;
   width: 13px;
   height: 12px;
-  top: 8px;
-  left: -22px;
+
   background-repeat: no-repeat;
 }
 
 .inner-page-footer__user-button::before {
+  top: 7px;
+  left: 3px;
   background-image: url("../img/user-footer.svg");
 }
 
 .inner-page-footer__compare-button::before {
+  top: 9px;
+  left: 8px;
   background-image: url("../img/compare-footer.svg");
 }
 
 .inner-page-footer__cart-button::before {
+  top: 7px;
+  left: 5px;
   background-image: url("../img/cart-footer.svg");
 }
 
 .inner-page-footer__user-menu-item:first-child {
-  margin-right: 22px;
+  margin-right: 17px;
+  letter-spacing: 0.4px;
+}
+
+.inner-page-footer__user-menu-item:nth-child(2) {
+  padding-left: 0;
 }
 
 .inner-page-footer__user-menu-item:nth-child(3) {
-  margin-left: 65px;
+  margin-left: 37px;
 }
 
 .inner-page-footer__user-menu-item:last-child {
@@ -1233,10 +1246,13 @@ a:active .popular__img {
 }
 
 .inner-page-footer__main-menu {
+  position: relative;
+  top: 2px;
   margin-left: 163px;
   width: 430px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   font-size: 18px;
   letter-spacing: 4px;
   line-height: 24px;
@@ -1279,6 +1295,7 @@ a:active .popular__img {
   width: 144px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-right: 482px;
 }
 
@@ -1761,7 +1778,6 @@ a:active .popular__img {
 }
 
 .price__text {
-  display: inline-block;
   font-size: 14px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.2);
@@ -1771,7 +1787,6 @@ a:active .popular__img {
 }
 
 .price__input {
-  display: inline-block;
   width: 65px;
   border: none;
   background-color: transparent;
