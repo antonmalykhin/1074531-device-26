@@ -26,6 +26,8 @@
 }
 
 body {
+  min-width: 1280px;
+
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -136,7 +138,13 @@ a {
 
   background-color: #f7e196;
   background-image: -o-linear-gradient(#ffffff 17%, #f7e196 17%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(17%, #ffffff), color-stop(17%, #f7e196));
+  background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(17%, #ffffff),
+  color-stop(17%, #f7e196)
+  );
   background-image:    linear-gradient(#ffffff 17%, #f7e196 17%);
 
   -webkit-box-direction: normal;
@@ -547,7 +555,13 @@ a {
   position: relative;
 
   background-image: -o-linear-gradient(#f7e196 23%, #ffffff 23%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(23%, #f7e196), color-stop(23%, #ffffff));
+  background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(23%, #f7e196),
+  color-stop(23%, #ffffff)
+  );
   background-image:    linear-gradient(#f7e196 23%, #ffffff 23%);
 }
 
@@ -1593,6 +1607,7 @@ a:active .popular__img {
   background-image: url("../img/logo-html-academy.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: contain;
 }
 
 .inner-page-footer__dev-link:hover,
@@ -2023,17 +2038,33 @@ a:active .popular__img {
 }
 
 .sorting__direction {
-  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+      flex-wrap: wrap;
+  justify-content: space-between;
+  width: 41px;
+
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -ms-flex-wrap: wrap;
 }
 
 .sorting__direction .sorting__button {
   position: relative;
 }
 
+.sorting__button--up,
+.sorting__button--down {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+
 .sorting__direction .sorting__button::before {
   content: "";
   position: absolute;
-  top: -4px;
+  top: 3px;
 
   width: 11px;
   height: 11px;
@@ -2047,13 +2078,13 @@ a:active .popular__img {
 }
 
 .sorting__button--up::before {
-  left: 19px;
+  left: 0;
 
   background-image: url("../img/icon-up-dir.svg");
 }
 
 .sorting__button--down::before {
-  left: 49px;
+  left: 4px;
 
   background-image: url("../img/icon-down-dir.svg");
 }
