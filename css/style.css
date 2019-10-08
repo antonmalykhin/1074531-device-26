@@ -138,13 +138,7 @@ a {
 
   background-color: #f7e196;
   background-image: -o-linear-gradient(#ffffff 17%, #f7e196 17%);
-  background-image: -webkit-gradient(
-  linear,
-  left top,
-  left bottom,
-  color-stop(17%, #ffffff),
-  color-stop(17%, #f7e196)
-  );
+  background-image:    -webkit-gradient(linear, left top, left bottom, color-stop(17%, #ffffff), color-stop(17%, #f7e196));
   background-image:    linear-gradient(#ffffff 17%, #f7e196 17%);
 
   -webkit-box-direction: normal;
@@ -555,13 +549,7 @@ a {
   position: relative;
 
   background-image: -o-linear-gradient(#f7e196 23%, #ffffff 23%);
-  background-image: -webkit-gradient(
-  linear,
-  left top,
-  left bottom,
-  color-stop(23%, #f7e196),
-  color-stop(23%, #ffffff)
-  );
+  background-image:    -webkit-gradient(linear, left top, left bottom, color-stop(23%, #f7e196), color-stop(23%, #ffffff));
   background-image:    linear-gradient(#f7e196 23%, #ffffff 23%);
 }
 
@@ -1628,7 +1616,7 @@ a:active .popular__img {
   display: none;
   width: 960px;
   padding-top: 93px;
-  padding-bottom: 85px;
+  padding-bottom: 87px;
 
   background-color: #ffffff;
   -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
@@ -1683,7 +1671,7 @@ a:active .popular__img {
 }
 
 .write-us__label {
-  display: inline-block;
+  display: block;
   margin-bottom: 6px;
 
   font-weight: 800;
@@ -2056,7 +2044,7 @@ a:active .popular__img {
 
 .sorting__button--up,
 .sorting__button--down {
-  display: inline-block;
+  display: block;
   width: 15px;
   height: 15px;
 }
@@ -2100,7 +2088,7 @@ a:active .popular__img {
   left: 0;
   z-index: -1;
 
-  width: calc(50vw - 328px);
+  width: 50vw;
   height: 100%;
 
   background-color: #efefef;
@@ -2172,6 +2160,7 @@ a:active .popular__img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
+  cursor: pointer;
 }
 
 .price__text {
