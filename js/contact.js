@@ -8,6 +8,8 @@ var nameField = contactWindow.querySelector("[name=name]");
 var emailField = contactWindow.querySelector("[name=email]");
 var messageField = contactWindow.querySelector("[name=message]");
 
+var lastFocusedElement;
+
 var isStorageSupport = true;
 var storageName = "";
 var storageEmail = "";
@@ -21,6 +23,7 @@ try {
 
 contactButtonOpen.addEventListener("click", function(evt) {
   evt.preventDefault();
+  lastFocusedElement = document.activeElement;
   contactWindow.classList.add("modal-show");
   if (storageName || storageEmail) {
     nameField.value = storageName;
@@ -35,6 +38,7 @@ contactButtonClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   contactWindow.classList.remove("modal-show");
   contactWindow.classList.remove("modal-error");
+  lastFocusedElement.focus();
 });
 
 contactForm.addEventListener("submit", function(evt) {
@@ -57,6 +61,7 @@ window.addEventListener("keydown", function(evt) {
     if (contactWindow.classList.contains("modal-show")) {
       contactWindow.classList.remove("modal-show");
       contactWindow.classList.remove("modal-error");
+      lastFocusedElement.focus();
     }
   }
 });
