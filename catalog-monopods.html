@@ -5,106 +5,102 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style-compressed.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="inner-page">
   <header class="page-header">
-    <nav class="page-navigation">
-      <div class="container">
-        <div class="page-header__background">
-          <a class="page-header__logo-container" href="index.html">
-            <img class="page-header__logo" src="img/logo.svg" width="163" height="35"
-              alt="Интернет магазин гаджетов Device">
-          </a>
+    <nav class="page-navigation container">
 
-          <div class="top">
-            <div class="columns">
-              <div class="column left-column">
-                <form class="search-form" action="#" method="get">
 
-                  <label class="search-form__label visually-hidden" for="search-field">Поиск по сайту</label>
+      <a class="page-header__logo-container" href="index.html">
+        <img class="page-header__logo" src="img/logo.svg" width="163" height="35"
+          alt="Интернет магазин гаджетов Device">
+      </a>
 
-                  <input class="search-form__field" type="search" name="search" id="search-field"
-                    placeholder="Поиск по сайту">
+      <div class="top">
+        <div class="columns">
+          <div class="column left-column">
+            <form class="search-form" action="#" method="get">
 
-                  <button class="search-form__button" type="button">Найти</button>
-                </form>
-              </div>
+              <label class="search-form__label visually-hidden" for="search-field">Поиск по сайту</label>
 
-              <div class="column right-column">
-                <a class="header-user-menu__button header-user-menu__button--loggedin user-button" href="#">Валентин
-                  Петухов</a>
-                <a class="header-user-menu__button header-user-menu__button--loggedin
-                logout-button" href="#">Выйти</a>
-                <a class="header-user-menu__button header-user-menu__button--loggedin compare-button"
-                  href="#">Сравнить</a>
-                <a class="header-user-menu__button header-user-menu__button--loggedin cart-button" href="#">Корзина</a>
-              </div>
-            </div>
+              <input class="search-form__field" type="search" name="search" id="search-field"
+                placeholder="Поиск по сайту">
+
+              <button class="search-form__button" type="submit">Найти</button>
+            </form>
           </div>
 
-          <div class="main-menu">
-            <div class="columns">
-              <div class="column left-column">
-                <div class="main-menu__wrapper">
-                  <a class="main-menu__item main-menu__catalog" href="#">Каталог товаров</a>
-                  <div class="sub-menu">
-                    <div class="container">
-                      <div class="columns">
-                        <div class="column left-side">
-                          <a class="sub-menu__item" href="#">Виртуальная реальность</a>
-                          <a class="sub-menu__item" href="catalog-monopods.html">Моноподы для селфи</a>
-                          <a class="sub-menu__item" href="#">Экшн-камеры</a>
-                        </div>
-                        <div class="column middle-side">
-                          <a class="sub-menu__item" href="#">Фитнес-браслеты</a>
-                          <a class="sub-menu__item" href="">Умные часы</a>
-                        </div>
-                        <div class="column right-side">
-                          <a class="sub-menu__item" href="#">Квадрокоптеры</a>
-                        </div>
-                      </div>
+          <div class="column right-column">
+            <a class="header-user-menu__button header-user-menu__button--loggedin user-button" href="#">Валентин
+              Петухов</a>
+            <a class="header-user-menu__button header-user-menu__button--loggedin
+                          logout-button" href="#">Выйти</a>
+            <a class="header-user-menu__button header-user-menu__button--loggedin compare-button" href="#">Сравнить</a>
+            <a class="header-user-menu__button header-user-menu__button--loggedin cart-button" href="#">Корзина</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-menu">
+        <div class="columns">
+          <div class="column left-column">
+            <div class="main-menu__wrapper">
+              <a class="main-menu__item main-menu__catalog" href="#">Каталог товаров</a>
+              <div class="sub-menu">
+                <div class="container">
+                  <div class="columns">
+                    <div class="column left-side">
+                      <a class="sub-menu__item" href="#">Виртуальная реальность</a>
+                      <a class="sub-menu__item" href="catalog-monopods.html">Моноподы для селфи</a>
+                      <a class="sub-menu__item" href="#">Экшн-камеры</a>
+                    </div>
+                    <div class="column middle-side">
+                      <a class="sub-menu__item" href="#">Фитнес-браслеты</a>
+                      <a class="sub-menu__item" href="">Умные часы</a>
+                    </div>
+                    <div class="column right-side">
+                      <a class="sub-menu__item" href="#">Квадрокоптеры</a>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="column right-column">
-                <a class="main-menu__item" href="#">Доставка</a>
-                <a class="main-menu__item" href="#">Гарантия</a>
-                <a class="main-menu__item" href="#">Контакты</a>
-              </div>
             </div>
+          </div>
+
+          <div class="column right-column">
+            <a class="main-menu__item" href="#">Доставка</a>
+            <a class="main-menu__item" href="#">Гарантия</a>
+            <a class="main-menu__item" href="#">Контакты</a>
           </div>
         </div>
       </div>
+
     </nav>
   </header>
 
   <main class="content">
     <div class="content__header">
       <div class="container">
-        <div class="content__wrapper">
-          <h1 class="content__page-title">Моноподы для селфи</h1>
-          <nav>
-            <h2 class="visually-hidden">Дополнительная навигация</h2>
-            <ul class="breadcrumbs list-format">
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="index.html">Главная</a>
-              </li>
+        <h1 class="content__page-title">Моноподы для селфи</h1>
+        <nav>
+          <h2 class="visually-hidden">Дополнительная навигация</h2>
+          <ul class="breadcrumbs list-format">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
 
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Каталог товаров</a>
-              </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+            </li>
 
-              <li class="breadcrumbs__item">
-                <span class="visually-hidden">Текущий пункт:</span>
-                Моноподы для селфи
-              </li>
-            </ul>
-          </nav>
-        </div>
+            <li class="breadcrumbs__item">
+              <span class="visually-hidden">Текущий пункт:</span>
+              Моноподы для селфи
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
 
