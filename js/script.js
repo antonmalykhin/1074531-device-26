@@ -65,3 +65,59 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 });
+
+var mapButtonOpen = document.querySelector(".contacts__map");
+
+var mapWindow = document.querySelector(".popup-map");
+var mapButtonClose = mapWindow.querySelector(".close_button");
+
+var lastFocusedElement;
+
+var modalClose = function() {
+  mapWindow.classList.remove("modal-show");
+  lastFocusedElement.focus();
+};
+
+mapButtonOpen.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  lastFocusedElement = document.activeElement;
+  mapWindow.classList.add("modal-show");
+  mapWindow.focus();
+});
+
+mapButtonClose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  modalClose();
+});
+
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (mapWindow.classList.contains("modal-show")) {
+      modalClose();
+    }
+  }
+});
+
+var serviceButtons = document.querySelectorAll(".services__input");
+var serviceDescriptions = document.querySelectorAll(".services__item");
+
+var makeVisible = function(items, id) {
+  for (var i = 0; i < items.length; i++) {
+    if (items[i].classList.contains(id)) {
+      items[i].classList.add("block-show");
+    } else {
+      items[i].classList.remove("block-show");
+    }
+  }
+};
+
+var btn_click = function(btn) {
+  btn.addEventListener("click", function() {
+    makeVisible(serviceDescriptions, btn.id);
+  });
+};
+
+for (var i = 0; i < serviceButtons.length; i++) {
+  btn_click(serviceButtons[i]);
+}
