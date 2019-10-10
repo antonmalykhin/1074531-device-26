@@ -154,8 +154,8 @@ a {
 }
 
 .inner-page .page-header__logo {
-  top: 2px;
-  left: -1px;
+  top: 0;
+  left: 0;
 
   padding-bottom: 1px;
 }
@@ -199,18 +199,30 @@ a {
 .page-navigation {
   padding-top: 21px;
 
-  background-image: -o-linear-gradient(#ffffff 23%, #f7e196 23%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(23%, #ffffff), color-stop(23%, #f7e196));
-  background-image:    linear-gradient(#ffffff 23%, #f7e196 23%);
+  background-image: -o-linear-gradient(#ffffff 40px, #f7e196 40px);
+  background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(40px, #ffffff),
+  color-stop(40px, #f7e196)
+  );
+  background-image:    linear-gradient(#ffffff 40px, #f7e196 40px);
 }
 
 .inner-page .page-navigation {
   padding-top: 21px;
   padding-bottom: 50px;
 
-  background-image: -o-linear-gradient(#ffffff 18%, #f7e196 18%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(18%, #ffffff), color-stop(18%, #f7e196));
-  background-image:    linear-gradient(#ffffff 18%, #f7e196 18%);
+  background-image: -o-linear-gradient(#ffffff 40px, #f7e196 40px);
+  background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(40px, #ffffff),
+  color-stop(40px, #f7e196)
+  );
+  background-image:    linear-gradient(#ffffff 40px, #f7e196 40px);
 }
 
 .page-navigation .right-column {
@@ -567,7 +579,13 @@ a {
   padding-top: 48px;
 
   background-image: -o-linear-gradient(#f7e196 30%, #ffffff 30%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #f7e196), color-stop(30%, #ffffff));
+  background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(30%, #f7e196),
+  color-stop(30%, #ffffff)
+  );
   background-image:    linear-gradient(#f7e196 30%, #ffffff 30%);
 }
 
