@@ -983,7 +983,16 @@ a:active .popular__img {
 }
 
 .services__button:active {
-  color: #000000;
+  color: #f7e184;
+}
+
+.services__input:nth-of-type(1) ~ .services__button:active::after {
+  width: 278px;
+
+  background-color: #000000;
+  -webkit-transform: scaleY(5);
+      -ms-transform: scaleY(5);
+          transform: scaleY(5);
 }
 
 .services__input:nth-of-type(1):checked ~ .services__button:nth-of-type(1)::after {
